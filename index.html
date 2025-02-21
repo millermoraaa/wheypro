@@ -1,110 +1,127 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WheyPro - Whey Protein de Alta Qualidade</title>
+    <title>WheyPro - Suplementos com o Melhor Preço</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-    <div class="logo">
-        <h1>WheyPro</h1>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="#produtos">Produtos</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
-</header>
-
-<section id="produtos">
-    <h2>Produtos</h2>
-    <div class="produtos-container">
-        <!-- Produto 1 -->
-        <div class="produto">
-            <img src="protein 1.webp" alt="Whey Protein 1">
-            <h3>Whey Protein Premium  
-                frete gratis</h3>
-            <p>Preço: R$ 99,99</p>
-            <a href="pagamento.html?produto=1">Comprar</a>
+    <header>
+        <div class="logo">
+            <h1>WheyPro</h1>
         </div>
-        <!-- Produto 2 -->
-        <div class="produto">
-            <img src="iso-whey-max- 2.webp" alt="Whey Protein 2">
-            <h3>Whey Protein Isolado  
-                frete gratis</h3>
-            <p>Preço: R$ 129,99</p>
-            <a href="pagamento.html?produto=2">Comprar</a>
+        <nav>
+            <ul>
+                <li><a href="#destaques">Destaques</a></li>
+                <li><a href="produtos.html">Todos os Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <img src="wheymax.jpg" class="hero-image">
+            <div class="hero-text">
+                <h1>WheyPro - Os Melhores Suplementos pelo Menor Preço!</h1>
+                <p>Confira nossa linha de whey protein, creatinas, vitaminas e muito mais.</p>
+                <a href="produtos.html" class="btn">Ver Produtos</a>
+            </div>
         </div>
-        <!-- Adicione mais produtos aqui -->
-    </div>
-    <!-- Produto 3 -->
-    <div class="produto">
-        <img src="357622-1 3.webp" alt="Whey Protein 3">
-        <h3>Whey Protein Concentrado  
-            frete grátis</h3>
-        <p>Preço: R$ 109,99</p>
-        <a href="pagamento.html?produto=3">Comprar</a>
-    </div>
-    <!-- Produto 4 -->
-    <div class="produto">
-        <img src="femini-whey-max-titanium-900g-baunilha-4.webp" alt="Whey Protein 4">
-        <h3>Whey Protein Hidrolisado 
-            frete grátis</h3>
-        <p>Preço: R$ 149,99</p>
-        <a href="pagamento.html?produto=4">Comprar</a>
-    </div>
-    <!-- Produto 5 -->
-    <div class="produto">
-        <img src="744858270751_ffzowuciuuqh_4.webp" alt="Whey Protein 5">
-        <h3>Whey Protein Vegano  
-            frete grátis</h3>
-        <p>Preço: R$ 119,99</p>
-        <a href="pagamento.html?produto=5">Comprar</a>
-    </div>
-    <!-- Produto 6 -->
-    <div class="produto">
-        <img src="Alimento_em_Po_Flavour_Whey_5.webp" alt="Whey Protein 6">
-        <h3>Whey Protein de Baunilha  
-            frete grátis</h3>
-        <p>Preço: R$ 139,99</p>
-        <a href="pagamento.html?produto=6">Comprar</a>
-    </div>
-    <!-- Produto 7 -->
-    <div class="produto">
-        <img src="6.webp" alt="Whey Protein 7">
-        <h3>Whey Protein Chocolate  
-            frete grátis</h3>
-        <p>Preço: R$ 129,99</p>
-        <a href="pagamento.html?produto=7">Comprar</a>
-    </div>
-    <!-- Produto 8 -->
-    <div class="produto">
-        <img src="suplemento-alimentar-de-carboidratos-e-proteinas-em-po-morango-max-titanium-super-whey-900g-refil-1.webp" alt="Whey Protein 8">
-        <h3>Whey Protein Morango  
-            frete grátis</h3>
-        <p>Preço: R$ 119,99</p>
-        <a href="pagamento.html?produto=8">Comprar</a>
-    </div>
-</section>
+    </section>
 
-<section id="contato">
-    <h2>Entre em Contato</h2>
-    <p>Se você tiver alguma dúvida, entre em contato conosco.</p>
-    <form action="mailto:miriammaututa@gmail.com" method="post" enctype="text/plain">
-        <input type="text" name="nome" placeholder="Seu Nome" required>
-        <input type="email" name="email" placeholder="Seu Email" required>
-        <textarea name="mensagem" placeholder="Sua mensagem"></textarea>
-        <button type="submit">Enviar</button>
-    </form>
-</section>
+    <section id="destaques" class="produtos-destaque">
+        <h2>Produtos em Destaque</h2>
+        <div class="produtos-container">
+            <div class="produto">
+                <img src="shopping (5).webp" alt="Whey Protein">
+                <h3>Kit: Whey Pro + 2X Mass + Bcaa + Creatine + Coqueteleira</h3>
+                <p>R$ 239,90</p>
+                <button onclick="adicionarAoCarrinho('Kit: Whey Pro + 2X Mass + Bcaa + Creatine + Coqueteleira', 'shopping (5).webp', 239.90)">Comprar</button>
+            </div>
+            <div class="produto">
+                <img src="shopping (6).webp" alt="Creatina">
+                <h3>Kit Whey Pro + Bcaa + Creatina + Hipercalorico Max Titanium</h3>
+                <p>R$ 169,90</p>
+                <button onclick="adicionarAoCarrinho('Kit Whey Pro + Bcaa + Creatina + Hipercalorico Max Titanium', 'shopping (6).webp', 169.90)">Comprar</button>
+            </div>
+        </div>
+    </section>
 
-<footer>
-    <p>&copy; 2025 WheyPro - Todos os direitos reservados</p>
-</footer>
+    <!-- Seção de Depoimentos -->
+    <section class="depoimentos-clientes">
+        <h2>Maximize Seus Resultados: 3 Suplementos Essenciais para Sua Rotina</h2>
+        <div class="depoimentos-container">
+            <div class="depoimento">
+                <img src="whey protein isolado.webp" class="foto-cliente">
+                <p>Whey Protein Isolado IsoWhey 900g - Alta Absorção</p>
+                <p class="nome-cliente">Whey Protein Isolado</p>
+            </div>
+            <div class="depoimento">
+                <img src="shopping (4).webp" class="foto-cliente">
+                <p>Creatina 100% Pura Monoidratada 300g - Dark Lab</p>
+                <p class="nome-cliente">Creatina Monohidratada</p>
+            </div>
+            <div class="depoimento">
+                <img src="shopping (17).webp" alt="Cliente 3" class="foto-cliente">
+                <p>Ômega 3 TG 1000mg com Vitamina E - Selo IFOS</p>
+                <p class="nome-cliente">Ômega 3</p>
+            </div>
+        </div>
+    </section>
 
+    <footer id="contato">
+        <div class="formulario-contato">
+            <h3>Entre em Contato</h3>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <p>&copy; 2023 WheyPro. Todos os direitos reservados.</p>
+        <p>Contato: wheypro@gmail.com</p>
+    </footer>
+
+    <script>
+        function adicionarAoCarrinho(nomeProduto, imagemProduto, precoProduto) {
+            // Garantir que o preço seja um número válido
+            precoProduto = parseFloat(precoProduto);
+
+            // Se o preço não for um número válido, retornar
+            if (isNaN(precoProduto)) {
+                alert("Erro: preço inválido.");
+                return;
+            }
+
+            // Recupera os produtos já adicionados ao carrinho do localStorage
+            let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+
+            // Cria um objeto para o novo produto
+            const produto = {
+                nome: nomeProduto,
+                imagem: imagemProduto,
+                preco: precoProduto,
+                quantidade: 1 // Inicia com 1 unidade
+            };
+
+            // Adiciona o novo produto ao array do carrinho
+            carrinho.push(produto);
+
+            // Salva o array atualizado de volta no localStorage
+            localStorage.setItem('carrinho', JSON.stringify(carrinho));
+
+            // Redireciona para a página do carrinho
+            window.location.href = 'carrinho.html';
+        }
+    </script>
 </body>
 </html>
